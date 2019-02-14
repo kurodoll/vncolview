@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>vncolview</title>
+    </head>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        img {
+            height: 100px;
+        }
+    </style>
+
+    <body>
+        {% for n in novels %}
+            <img src={{ n['img'][6:] }}>
+        {% end %}
+    </body>
+</html>
